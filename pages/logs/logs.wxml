@@ -1,0 +1,8 @@
+<!--logs.wxml
+ <block/> 控制标签来组织代码，在 <block/> 上使用 wx:for-items 绑定 logs 数据，并将 logs 数据循环展开节点 index为键
+-->
+<view class="container log-list">
+  <block wx:for-items="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>
